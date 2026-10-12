@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/twinship-eu/.github/blob/main/SECURITY.md
+    about: Please report security issues privately, not as public issues.
+  - name: TwinShip ontology documentation
+    url: https://ontology.twin-ship.eu/
+    about: Browse classes, properties and their definitions.
+  - name: Project website & contact
+    url: https://twin-ship.eu/
+    about: News, publications, consortium and general enquiries.
