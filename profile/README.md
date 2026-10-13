@@ -1,8 +1,8 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/twinship-eu/.github/main/profile/assets/twinship-logo-dark.png">
-  <img src="https://raw.githubusercontent.com/twinship-eu/.github/main/profile/assets/twinship-logo-light.png" alt="TwinShip" width="420">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/twinship-eu/.github/raw/main/profile/assets/twinship-logo-dark.png">
+  <img src="https://github.com/twinship-eu/.github/raw/main/profile/assets/twinship-logo-light.png" alt="TwinShip" width="420">
 </picture>
 
 ### Integrated Digital Twin Framework to Enable Green Ship Operations Towards Zero-Emission Vessels
@@ -31,8 +31,8 @@ Home of the **VesselAI platform**, a single secure workspace for maritime digita
 ## The VesselAI platform
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/twinship-eu/.github/main/profile/assets/vesselai-logo-dark.png">
-  <img align="right" width="150" src="https://raw.githubusercontent.com/twinship-eu/.github/main/profile/assets/vesselai-logo-light.png" alt="VesselAI – maritime digitalisation">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/twinship-eu/.github/raw/main/profile/assets/vesselai-logo-dark.png">
+  <img align="right" width="150" src="https://github.com/twinship-eu/.github/raw/main/profile/assets/vesselai-logo-light.png" alt="VesselAI – maritime digitalisation">
 </picture>
 
 **VesselAI is a unified digital-twin and AI workspace designed specifically for maritime analytics.** Everything runs in the browser. Data storage, notebooks, pipelines, models, AI assistants and digital twins come pre-configured and connected behind one sign-in. Teams can focus on analysis and decisions instead of running infrastructure.
@@ -43,8 +43,8 @@ The platform was first developed in the Horizon 2020 project [VesselAI](https://
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/twinship-eu/.github/main/profile/assets/vesselai-platform-dark.svg">
-    <img src="https://raw.githubusercontent.com/twinship-eu/.github/main/profile/assets/vesselai-platform-light.svg" alt="VesselAI platform at a glance: users reach Digital Twin Studio, AI Services, Data Analytics, and Data Space and Governance through one web portal with single sign-on, fed by vessel, weather, design and partner data." width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/twinship-eu/.github/raw/main/profile/assets/vesselai-platform-dark.svg">
+    <img src="https://github.com/twinship-eu/.github/raw/main/profile/assets/vesselai-platform-light.svg" alt="VesselAI platform at a glance: users reach Digital Twin Studio, AI Services, Data Analytics, and Data Space and Governance through one web portal with single sign-on, fed by vessel, weather, design and partner data." width="100%">
   </picture>
 </p>
 
@@ -108,18 +108,18 @@ The platform was first developed in the Horizon 2020 project [VesselAI](https://
 ### See it in action
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/twinship-eu/.github/main/profile/assets/screens/epcd-explorer.png" alt="EPCD Explorer showing a vessel's actual vs. predicted speed, RPM, shaft power and fuel rate" width="100%">
+  <img src="https://github.com/twinship-eu/.github/raw/main/profile/assets/screens/epcd-explorer.png" alt="EPCD Explorer showing a vessel's actual vs. predicted speed, RPM, shaft power and fuel rate" width="100%">
   <br><sub><b>EPCD Explorer</b>: live performance compared with the digital-twin baseline (demo data)</sub>
 </p>
 
 <table>
 <tr>
 <td width="50%" align="center">
-  <img src="https://raw.githubusercontent.com/twinship-eu/.github/main/profile/assets/screens/ai-workflows.png" alt="AI Workflows page listing scheduled and chained pipeline jobs">
+  <img src="https://github.com/twinship-eu/.github/raw/main/profile/assets/screens/ai-workflows.png" alt="AI Workflows page listing scheduled and chained pipeline jobs">
   <br><sub><b>AI Workflows</b>: notebooks promoted to scheduled, chained pipelines</sub>
 </td>
 <td width="50%" align="center">
-  <img src="https://raw.githubusercontent.com/twinship-eu/.github/main/profile/assets/screens/notebooks.png" alt="Notebook Environment with personal, shared and example notebooks">
+  <img src="https://github.com/twinship-eu/.github/raw/main/profile/assets/screens/notebooks.png" alt="Notebook Environment with personal, shared and example notebooks">
   <br><sub><b>Notebooks</b>: private, team-shared and curated example notebooks</sub>
 </td>
 </tr>
@@ -198,12 +198,12 @@ These modules are being developed in TwinShip and will be added to the platform:
 
 TwinShip brings together leading maritime technology providers, shipowners, naval architects, a classification society, a port and research institutes. Together they are building a digital-twin-enabled Decision Support System for green ship operations. The project is working towards cutting greenhouse-gas emissions from shipping by **30–40 % by 2030** and **80–90 % by 2040**, and reaching **net zero by 2045** (all relative to 2008).
 
-| Pilot | Vessel | Partner |
-| :-: | --- | --- |
-| 1 | RoRo vessel | Grimaldi |
-| 2 | RoPax vessel | Stena |
-| 3 | Chemical tanker | Stena |
-| 4 | Futuristic concept: an unmanned, zero-emission RoRo vessel with wind-assisted propulsion | |
+| Pilot | Vessel |
+| :-: | --- |
+| 1 | RoRo vessel |
+| 2 | RoPax vessel |
+| 3 | Chemical tanker |
+| 4 | Futuristic concept: an unmanned, zero-emission RoRo vessel with wind-assisted propulsion |
 
 **Coordinator:** [UiT The Arctic University of Norway](https://uit.no/)<br>
 **Partners:** SINTEF · Wärtsilä · Institute of Communication and Computer Systems (ICCS) · National Technical University of Athens (NTUA) · American Bureau of Shipping (ABS) · Grimaldi Euromed · Stena · Knud E. Hansen · Fundación Valenciaport · ASSIST Software · UBITECH · 52°North · Bound 4 Blue
@@ -223,7 +223,7 @@ More about the project: **[objectives](https://twin-ship.eu/objectives)** · **[
 <table>
   <tr>
     <td width="110" align="center">
-      <img src="https://raw.githubusercontent.com/twinship-eu/.github/main/profile/assets/eu-flag.png" alt="Flag of the European Union" width="90">
+      <img src="https://github.com/twinship-eu/.github/raw/main/profile/assets/eu-flag.png" alt="Flag of the European Union" width="90">
     </td>
     <td>
       <sub>
