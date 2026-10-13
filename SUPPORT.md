@@ -2,6 +2,7 @@
 
 | You want to… | Go to |
 | --- | --- |
+| Get help using the VesselAI platform | Inside the platform, use the **Quick Guide**, ask the built-in **VesselAI Assistant**, or click **Report a problem** |
 | Learn how to install or use a repository | That repository's `README.md` |
 | Browse the TwinShip ontology | [ontology.twin-ship.eu](https://ontology.twin-ship.eu/) |
 | Report a bug or request a feature | The **Issues** tab of the relevant repository |

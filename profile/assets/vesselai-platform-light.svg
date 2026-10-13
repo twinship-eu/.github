@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="430" viewBox="0 0 1040 430" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">VesselAI platform at a glance</title>
+<desc id="d">Users reach four module groups through one VesselAI web portal with single sign-on: Digital Twin Studio, AI Services, Data Analytics, and Data Space and Governance, fed by vessel, weather, design and partner data.</desc>
+<defs><marker id="arrow-light" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#afb8c1"/></marker></defs>
+<rect x="12" y="4" width="242" height="38" rx="19" fill="#f6f8fa" stroke="#d0d7de"/>
+<text x="133.0" y="28" font-size="13" font-weight="600" fill="#1f2328" text-anchor="middle">Fleet &amp; ship operators</text>
+<line x1="133.0" y1="44" x2="133.0" y2="63" stroke="#afb8c1" stroke-width="1.5" marker-end="url(#arrow-light)"/>
+<rect x="270" y="4" width="242" height="38" rx="19" fill="#f6f8fa" stroke="#d0d7de"/>
+<text x="391.0" y="28" font-size="13" font-weight="600" fill="#1f2328" text-anchor="middle">Naval architects &amp; designers</text>
+<line x1="391.0" y1="44" x2="391.0" y2="63" stroke="#afb8c1" stroke-width="1.5" marker-end="url(#arrow-light)"/>
+<rect x="528" y="4" width="242" height="38" rx="19" fill="#f6f8fa" stroke="#d0d7de"/>
+<text x="649.0" y="28" font-size="13" font-weight="600" fill="#1f2328" text-anchor="middle">Data scientists &amp; ML engineers</text>
+<line x1="649.0" y1="44" x2="649.0" y2="63" stroke="#afb8c1" stroke-width="1.5" marker-end="url(#arrow-light)"/>
+<rect x="786" y="4" width="242" height="38" rx="19" fill="#f6f8fa" stroke="#d0d7de"/>
+<text x="907.0" y="28" font-size="13" font-weight="600" fill="#1f2328" text-anchor="middle">Researchers &amp; partners</text>
+<line x1="907.0" y1="44" x2="907.0" y2="63" stroke="#afb8c1" stroke-width="1.5" marker-end="url(#arrow-light)"/>
+<rect x="12" y="66" width="1016" height="58" rx="10" fill="#01203A"/>
+<text x="520.0" y="91" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle">VesselAI web portal</text>
+<text x="520.0" y="111" font-size="13" font-weight="400" fill="#c8d3df" text-anchor="middle">Single sign-on  ·  role-based access  ·  built-in VesselAI Assistant  ·  nothing to install</text>
+<line x1="133.0" y1="126" x2="133.0" y2="145" stroke="#afb8c1" stroke-width="1.5" marker-end="url(#arrow-light)"/>
+<rect x="12" y="148" width="242" height="196" rx="10" fill="#ffffff"/>
+<rect x="12" y="148" width="242" height="44" rx="10" fill="#006837"/>
+<rect x="12" y="182" width="242" height="10" fill="#006837"/>
+<rect x="12" y="148" width="242" height="196" rx="10" fill="none" stroke="#d0d7de"/>
+<text x="28" y="176" font-size="15" font-weight="700" fill="#ffffff" text-anchor="start">Digital Twin Studio</text>
+<circle cx="32" cy="217.5" r="3.5" fill="#006837"/>
+<text x="44" y="222" font-size="13" font-weight="400" fill="#1f2328" text-anchor="start">EPCD performance explorer</text>
+<circle cx="32" cy="251.5" r="3.5" fill="#006837"/>
+<text x="44" y="256" font-size="13" font-weight="400" fill="#1f2328" text-anchor="start">What-if &amp; MARPOL NOx checks</text>
+<circle cx="32" cy="285.5" r="3.5" fill="#006837"/>
+<text x="44" y="290" font-size="13" font-weight="400" fill="#1f2328" text-anchor="start">Port-to-port voyage plans</text>
+<circle cx="32" cy="319.5" r="3.5" fill="#006837"/>
+<text x="44" y="324" font-size="13" font-weight="400" fill="#1f2328" text-anchor="start">Speed–cost decision graphs</text>
+<line x1="133.0" y1="366" x2="133.0" y2="347" stroke="#afb8c1" stroke-width="1.5" marker-end="url(#arrow-light)"/>
+<line x1="391.0" y1="126" x2="391.0" y2="145" stroke="#afb8c1" stroke-width="1.5" marker-end="url(#arrow-light)"/>
+<rect x="270" y="148" width="242" height="196" rx="10" fill="#ffffff"/>
+<rect x="270" y="148" width="242" height="44" rx="10" fill="#5b3f99"/>
+<rect x="270" y="182" width="242" height="10" fill="#5b3f99"/>
+<rect x="270" y="148" width="242" height="196" rx="10" fill="none" stroke="#d0d7de"/>
+<text x="286" y="176" font-size="15" font-weight="700" fill="#ffffff" text-anchor="start">AI Services</text>
+<circle cx="290" cy="217.5" r="3.5" fill="#5b3f99"/>
+<text x="302" y="222" font-size="13" font-weight="400" fill="#1f2328" text-anchor="start">Private Jupyter notebooks</text>
+<circle cx="290" cy="251.5" r="3.5" fill="#5b3f99"/>
+<text x="302" y="256" font-size="13" font-weight="400" fill="#1f2328" text-anchor="start">Notebook-to-pipeline jobs</text>
+<circle cx="290" cy="285.5" r="3.5" fill="#5b3f99"/>
+<text x="302" y="290" font-size="13" font-weight="400" fill="#1f2328" text-anchor="start">Model catalogue &amp; inference</text>
+<circle cx="290" cy="319.5" r="3.5" fill="#5b3f99"/>
+<text x="302" y="324" font-size="13" font-weight="400" fill="#1f2328" text-anchor="start">No-code assistants &amp; agents</text>
+<line x1="391.0" y1="366" x2="391.0" y2="347" stroke="#afb8c1" stroke-width="1.5" marker-end="url(#arrow-light)"/>
+<line x1="649.0" y1="126" x2="649.0" y2="145" stroke="#afb8c1" stroke-width="1.5" marker-end="url(#arrow-light)"/>
+<rect x="528" y="148" width="242" height="196" rx="10" fill="#ffffff"/>
+<rect x="528" y="148" width="242" height="44" rx="10" fill="#1f6fb2"/>
+<rect x="528" y="182" width="242" height="10" fill="#1f6fb2"/>
+<rect x="528" y="148" width="242" height="196" rx="10" fill="none" stroke="#d0d7de"/>
+<text x="544" y="176" font-size="15" font-weight="700" fill="#ffffff" text-anchor="start">Data Analytics</text>
+<circle cx="548" cy="217.5" r="3.5" fill="#1f6fb2"/>
+<text x="560" y="222" font-size="13" font-weight="400" fill="#1f2328" text-anchor="start">No-code visual query builder</text>
+<circle cx="548" cy="251.5" r="3.5" fill="#1f6fb2"/>
+<text x="560" y="256" font-size="13" font-weight="400" fill="#1f2328" text-anchor="start">SQL Studio on the lakehouse</text>
+<circle cx="548" cy="285.5" r="3.5" fill="#1f6fb2"/>
+<text x="560" y="290" font-size="13" font-weight="400" fill="#1f2328" text-anchor="start">Vessel/weather data requests</text>
+<circle cx="548" cy="319.5" r="3.5" fill="#1f6fb2"/>
+<text x="560" y="324" font-size="13" font-weight="400" fill="#1f2328" text-anchor="start">Real-time data streaming</text>
+<line x1="649.0" y1="366" x2="649.0" y2="347" stroke="#afb8c1" stroke-width="1.5" marker-end="url(#arrow-light)"/>
+<line x1="907.0" y1="126" x2="907.0" y2="145" stroke="#afb8c1" stroke-width="1.5" marker-end="url(#arrow-light)"/>
+<rect x="786" y="148" width="242" height="196" rx="10" fill="#ffffff"/>
+<rect x="786" y="148" width="242" height="44" rx="10" fill="#01203A"/>
+<rect x="786" y="182" width="242" height="10" fill="#01203A"/>
+<rect x="786" y="148" width="242" height="196" rx="10" fill="none" stroke="#d0d7de"/>
+<text x="802" y="176" font-size="15" font-weight="700" fill="#ffffff" text-anchor="start">Data Space &amp; Governance</text>
+<circle cx="806" cy="217.5" r="3.5" fill="#01203A"/>
+<text x="818" y="222" font-size="13" font-weight="400" fill="#1f2328" text-anchor="start">Secure object storage</text>
+<circle cx="806" cy="251.5" r="3.5" fill="#01203A"/>
+<text x="818" y="256" font-size="13" font-weight="400" fill="#1f2328" text-anchor="start">Per-dataset access policies</text>
+<circle cx="806" cy="285.5" r="3.5" fill="#01203A"/>
+<text x="818" y="290" font-size="13" font-weight="400" fill="#1f2328" text-anchor="start">Per-company data encryption</text>
+<circle cx="806" cy="319.5" r="3.5" fill="#01203A"/>
+<text x="818" y="324" font-size="13" font-weight="400" fill="#59636e" text-anchor="start" font-style="italic">Knowledge graph</text>
+<rect x="976" y="310" width="40" height="18" rx="9" fill="#fff8c5" stroke="#d4a72c"/>
+<text x="996.0" y="323" font-size="10" font-weight="700" fill="#7d4e00" text-anchor="middle" letter-spacing="0.6">SOON</text>
+<line x1="907.0" y1="366" x2="907.0" y2="347" stroke="#afb8c1" stroke-width="1.5" marker-end="url(#arrow-light)"/>
+<rect x="12" y="368" width="1016" height="58" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+<text x="520.0" y="389" font-size="11" font-weight="700" fill="#59636e" text-anchor="middle" letter-spacing="1.4">DATA IN</text>
+<text x="520.0" y="410" font-size="13.5" font-weight="400" fill="#1f2328" text-anchor="middle">Pilot-vessel positions &amp; telemetry  ·  Copernicus Marine &amp; ERA5  ·  ECMWF forecasts  ·  Design &amp; engine data  ·  Your own datasets</text>
+</svg>

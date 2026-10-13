@@ -5,7 +5,9 @@ This repository holds organisation-wide settings for the [TwinShip](https://twin
 | Path | Purpose |
 | --- | --- |
 | [`profile/README.md`](profile/README.md) | Public profile shown on [github.com/twinship-eu](https://github.com/twinship-eu) |
-| [`profile/assets/`](profile/assets/) | Logo variants (light/dark), EU flag and the organisation avatar |
+| [`profile/assets/`](profile/assets/) | TwinShip and VesselAI logos (light/dark), the EU flag and the organisation avatar |
+| [`profile/assets/vesselai-platform-*.svg`](profile/assets/) | The "platform at a glance" diagram in light and dark versions. These are plain SVG files you can edit directly. |
+| [`profile/assets/screens/`](profile/assets/screens/) | VesselAI platform screenshots used on the profile |
 | [`CONTRIBUTING.md`](CONTRIBUTING.md) | Default contributing guidelines |
 | [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) | Default code of conduct (Contributor Covenant 2.1) |
 | [`SECURITY.md`](SECURITY.md) | Default policy for reporting security vulnerabilities |
