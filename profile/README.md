@@ -16,7 +16,7 @@ Home of the **VesselAI platform**, a single secure workspace for maritime digita
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-TwinShip-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/twinship/)
 [![YouTube](https://img.shields.io/badge/YouTube-@TwinShipProject-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://www.youtube.com/@TwinShipProject)
 
-**[Platform](#the-vesselai-platform)** · **[Capabilities](#what-you-can-do)** · **[Why VesselAI](#why-vesselai)** · **[Architecture](#architecture)** · **[Roadmap](#roadmap)** · **[Project](#the-twinship-project)** · **[Contact](#get-involved)**
+**[Platform](#the-vesselai-platform)** · **[Capabilities](#what-you-can-do)** · **[Why VesselAI](#why-vesselai)** · **[Roadmap](#roadmap)** · **[Project](#the-twinship-project)** · **[Contact](#get-involved)**
 
 </div>
 
@@ -168,17 +168,6 @@ Developed with shipowners, designers and technology providers, and being validat
 </table>
 
 <sub>The platform is built on proven open-source technology (JupyterLab, MLflow, Dagster, Trino and Dify) and on open semantic-web standards (OWL, SHACL and QUDT) through the TwinShip ontology.</sub>
-
-## Architecture
-
-VesselAI runs as a set of containerised services in five groups. The VesselAI dashboard never touches the data stores directly. Its data requests go through a FastAPI **control plane**, which checks the user's token and applies role- and attribute-based access control (RBAC/ABAC) before reaching the data lake, the SQL engine, Spark or the ML stack. ML pipelines read and write data through the same broker. The **anonymizer** encrypts partner data (AES-256-GCM) into the data lake under per-dataset policies. **Keycloak** provides single sign-on across the applications and core services.
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/twinship-eu/.github/raw/main/profile/assets/vesselai-architecture-dark.svg">
-    <img src="https://github.com/twinship-eu/.github/raw/main/profile/assets/vesselai-architecture-light.svg" alt="VesselAI architecture: applications call a FastAPI control plane that applies RBAC/ABAC in front of the storage layer (MinIO, Trino, Hive Metastore, Spark and Delta, OpenMetadata) and the ML layer (Dagster, MLflow, JupyterHub, notebook API). An anonymizer encrypts partner data into the data lake, and Keycloak provides single sign-on." width="100%">
-  </picture>
-</p>
 
 ## Roadmap
 
