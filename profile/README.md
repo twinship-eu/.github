@@ -16,7 +16,7 @@ Home of the **VesselAI platform**, a single secure workspace for maritime digita
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-TwinShip-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/twinship/)
 [![YouTube](https://img.shields.io/badge/YouTube-@TwinShipProject-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://www.youtube.com/@TwinShipProject)
 
-**[Platform](#the-vesselai-platform)** · **[Capabilities](#what-you-can-do)** · **[Why VesselAI](#why-vesselai)** · **[Roadmap](#roadmap)** · **[Project](#the-twinship-project)** · **[Contact](#get-involved)**
+**[Platform](#the-vesselai-platform)** · **[Capabilities](#what-you-can-do)** · **[Why VesselAI](#why-vesselai)** · **[Architecture](#architecture)** · **[Roadmap](#roadmap)** · **[Project](#the-twinship-project)** · **[Contact](#get-involved)**
 
 </div>
 
@@ -44,7 +44,7 @@ The platform was first developed in the Horizon 2020 project [VesselAI](https://
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github.com/twinship-eu/.github/raw/main/profile/assets/vesselai-platform-dark.svg">
-    <img src="https://github.com/twinship-eu/.github/raw/main/profile/assets/vesselai-platform-light.svg" alt="VesselAI platform at a glance: users reach Digital Twin Studio, AI Services, Data Analytics, and Data Space and Governance through one web portal with single sign-on, fed by vessel, weather, design and partner data." width="100%">
+    <img src="https://github.com/twinship-eu/.github/raw/main/profile/assets/vesselai-platform-light.svg" alt="VesselAI platform at a glance: users reach Digital Twin (DT) Models, AI Services, Data Analytics, and Data Space and Governance through one web portal with single sign-on, fed by vessel, weather, design and partner data." width="100%">
   </picture>
 </p>
 
@@ -54,7 +54,7 @@ The platform was first developed in the Horizon 2020 project [VesselAI](https://
 <tr>
 <td width="50%" valign="top">
 
-### Digital Twin Studio
+### Digital Twin (DT) Models
 
 - **EPCD Explorer** (Engine–Propeller Combinator Diagram): physics-based estimates of RPM, shaft power, fuel use, CO₂ and NOₓ for any vessel condition and sea state.
 - **What-if simulator**: vary speed, draft, trim, heading, propeller pitch, wind and waves, and check NOₓ against IMO MARPOL Annex VI Tier I/II/III.
@@ -132,7 +132,7 @@ The platform was first developed in the Horizon 2020 project [VesselAI](https://
 3. **Explore.** Query visually or with SQL, preview the results and export them.
 4. **Build.** Develop and test models in your private notebook, and collaborate with your team.
 5. **Automate.** Promote notebooks to scheduled pipelines, and track runs and models in the registry.
-6. **Decide.** Use the Digital Twin Studio to simulate scenarios, plan voyages and compare cost and emissions.
+6. **Decide.** Use EPCD Explorer in Digital Twin (DT) Models to simulate scenarios, plan voyages and compare cost and emissions.
 
 ## Why VesselAI
 
@@ -169,19 +169,33 @@ Developed with shipowners, designers and technology providers, and being validat
 
 <sub>The platform is built on proven open-source technology (JupyterLab, MLflow, Dagster, Trino and Dify) and on open semantic-web standards (OWL, SHACL and QUDT) through the TwinShip ontology.</sub>
 
+## Architecture
+
+VesselAI runs as a set of containerised services in five groups. The VesselAI dashboard never touches the data stores directly. Its data requests go through a FastAPI **control plane**, which checks the user's token and applies role- and attribute-based access control (RBAC/ABAC) before reaching the data lake, the SQL engine, Spark or the ML stack. ML pipelines read and write data through the same broker. The **anonymizer** encrypts partner data (AES-256-GCM) into the data lake under per-dataset policies. **Keycloak** provides single sign-on across the applications and core services.
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/twinship-eu/.github/raw/main/profile/assets/vesselai-architecture-dark.svg">
+    <img src="https://github.com/twinship-eu/.github/raw/main/profile/assets/vesselai-architecture-light.svg" alt="VesselAI architecture: applications call a FastAPI control plane that applies RBAC/ABAC in front of the storage layer (MinIO, Trino, Hive Metastore, Spark and Delta, OpenMetadata) and the ML layer (Dagster, MLflow, JupyterHub, notebook API). An anonymizer encrypts partner data into the data lake, and Keycloak provides single sign-on." width="100%">
+  </picture>
+</p>
+
 ## Roadmap
 
 These modules are being developed in TwinShip and will be added to the platform:
 
 | Module | What it will do |
 | --- | --- |
-| **Vessel Data Cloud Space** | Explore vessel data as a connected knowledge graph, built on shared ontologies so the same terms mean the same thing in every tool. |
-| **ML & AI digital-twin models** | Cluster operating conditions and learn regression models from telemetry, combined with the physics-based twins. |
-| **Data quality governance** | Detect anomalies in the data feeding the twins and show how records are flagged, corrected or excluded. |
-| **Model evaluation methodology** | Compare model versions on consistent, repeatable criteria, including hardware-in-the-loop testing. |
-| **Voyage optimisation** | Weather routing with just-in-time arrival. |
-| **LCCA & EIA** | Life-cycle cost analysis and environmental impact assessment of fuels and technologies. |
-| **Technology profile analysis** | Compare retrofit and newbuild options using both cost and environmental results. |
+| **Digital Twin (DT) Models** | |
+| High Level DT – Vessel Data Cloud Space | Explore vessel data as a connected knowledge graph, built on shared ontologies so the same terms mean the same thing in every tool. |
+| Low Level DT – ML and AI Algorithms | Cluster operating conditions and learn regression models from telemetry, combined with the physics-based twins. |
+| Data Quality Governance Strategy | Detect anomalies in the data feeding the twins and show how records are flagged, corrected or excluded. |
+| Model Evaluation Methodology | Compare model versions on consistent, repeatable criteria, including hardware-in-the-loop testing. |
+| **Decision Support System (DSS)** | |
+| Voyage Optimization | Weather routing with just-in-time arrival. |
+| LCCA | Life-cycle cost analysis of fuels and technologies. |
+| EIA | Environmental impact assessment of fuels and technologies. |
+| Technology Profile Analysis | Compare retrofit and newbuild options using both LCCA and EIA results. |
 
 > **Platform access:** the VesselAI platform is currently operated for TwinShip partners and pilot users at **[platform.vessel-ai.eu](https://platform.vessel-ai.eu/)**.
 > Interested in a demo, a pilot or a collaboration? Contact us at **[info@twin-ship.eu](mailto:info@twin-ship.eu)**.

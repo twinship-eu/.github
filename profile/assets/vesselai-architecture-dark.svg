@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="512" viewBox="0 0 1040 512" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" role="img" aria-labelledby="t d">
+<title id="t">VesselAI platform architecture</title>
+<desc id="d">Applications sit on top of a FastAPI control plane that applies role- and attribute-based access control in front of the storage layer (MinIO, Trino, Hive Metastore, Spark and Delta, OpenMetadata) and the ML layer (Dagster, MLflow, JupyterHub, notebook API). An anonymizer encrypts partner data into the data lake. Keycloak provides single sign-on to the applications, the broker, Trino and OpenMetadata.</desc>
+<defs><marker id="arch-arrow-dark" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6e7681"/></marker></defs>
+<rect x="12" y="8" width="180" height="454" rx="10" fill="#161b22" stroke="#8fb4d9" stroke-width="1.5"/>
+<text x="26" y="29" font-size="12.5" font-weight="700" fill="#8fb4d9" text-anchor="start">Identity · gateway · edge</text>
+<rect x="208" y="8" width="820" height="92" rx="10" fill="#161b22" stroke="#39c5cf" stroke-width="1.5"/>
+<text x="222" y="29" font-size="12.5" font-weight="700" fill="#39c5cf" text-anchor="start">Applications</text>
+<rect x="208" y="150" width="622" height="94" rx="10" fill="#161b22" stroke="#3fb950" stroke-width="1.5"/>
+<text x="222" y="171" font-size="12.5" font-weight="700" fill="#3fb950" text-anchor="start">Control plane · RBAC/ABAC broker</text>
+<rect x="208" y="310" width="300" height="152" rx="10" fill="#161b22" stroke="#a371f7" stroke-width="1.5"/>
+<text x="222" y="331" font-size="12.5" font-weight="700" fill="#a371f7" text-anchor="start">ML · notebooks</text>
+<rect x="524" y="310" width="504" height="152" rx="10" fill="#161b22" stroke="#58a6ff" stroke-width="1.5"/>
+<text x="538" y="331" font-size="12.5" font-weight="700" fill="#58a6ff" text-anchor="start">Storage · query · governance</text>
+<path d="M500,86 L500,182" fill="none" stroke="#6e7681" stroke-width="1.5" marker-end="url(#arch-arrow-dark)"/>
+<path d="M440,86 L440,124 L200,124 L200,367 L222,367" fill="none" stroke="#6e7681" stroke-width="1.5" marker-end="url(#arch-arrow-dark)"/>
+<text x="300" y="119" font-size="11" font-weight="400" fill="#9198a1" text-anchor="middle" font-style="italic">notebooks</text>
+<path d="M919,86 L919,344" fill="none" stroke="#6e7681" stroke-width="1.5" marker-end="url(#arch-arrow-dark)"/>
+<text x="927" y="132" font-size="11" font-weight="400" fill="#9198a1" text-anchor="start" font-style="italic">SQL queries</text>
+<path d="M420,228 L420,310" fill="none" stroke="#6e7681" stroke-width="1.5" marker-end="url(#arch-arrow-dark)"/>
+<text x="412" y="276" font-size="11" font-weight="400" fill="#9198a1" text-anchor="end" font-style="italic">jobs · runs</text>
+<path d="M470,344 L470,228" fill="none" stroke="#6e7681" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#arch-arrow-dark)"/>
+<text x="478" y="276" font-size="11" font-weight="400" fill="#9198a1" text-anchor="start" font-style="italic">data via broker</text>
+<path d="M590,228 L590,310" fill="none" stroke="#6e7681" stroke-width="1.5" marker-end="url(#arch-arrow-dark)"/>
+<text x="598" y="276" font-size="11" font-weight="400" fill="#9198a1" text-anchor="start" font-style="italic">S3 · SQL · Spark</text>
+<path d="M760,228 L760,344" fill="none" stroke="#6e7681" stroke-width="1.5" marker-end="url(#arch-arrow-dark)"/>
+<text x="768" y="276" font-size="11" font-weight="400" fill="#9198a1" text-anchor="start" font-style="italic">encrypted files</text>
+<rect x="26" y="50" width="152" height="46" rx="7" fill="#1d3b5e" stroke="#8fb4d9"/>
+<text x="102.0" y="70" font-size="13" font-weight="600" fill="#ffffff" text-anchor="middle">Keycloak</text>
+<text x="102.0" y="86" font-size="11" font-weight="400" fill="#ffffff" text-anchor="middle">single sign-on</text>
+<rect x="26" y="128" width="152" height="46" rx="7" fill="#0d1117" stroke="#3d444d"/>
+<text x="102.0" y="148" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="middle">APISIX</text>
+<text x="102.0" y="164" font-size="11" font-weight="400" fill="#9198a1" text-anchor="middle">API gateway</text>
+<rect x="26" y="206" width="152" height="46" rx="7" fill="#0d1117" stroke="#3d444d"/>
+<text x="102.0" y="226" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="middle">Nginx Proxy Manager</text>
+<text x="102.0" y="242" font-size="11" font-weight="400" fill="#9198a1" text-anchor="middle">TLS edge</text>
+<rect x="26" y="284" width="152" height="46" rx="7" fill="#0d1117" stroke="#3d444d"/>
+<text x="102.0" y="304" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="middle">Prometheus / Grafana</text>
+<text x="102.0" y="320" font-size="11" font-weight="400" fill="#9198a1" text-anchor="middle">monitoring</text>
+<rect x="222" y="40" width="189" height="46" rx="7" fill="#0d1117" stroke="#3d444d"/>
+<text x="316.5" y="60" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="middle">Documentation portal</text>
+<text x="316.5" y="76" font-size="11" font-weight="400" fill="#9198a1" text-anchor="middle">Docusaurus</text>
+<rect x="423" y="40" width="189" height="46" rx="7" fill="#0d1117" stroke="#3d444d"/>
+<text x="517.5" y="60" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="middle">VesselAI dashboard</text>
+<text x="517.5" y="76" font-size="11" font-weight="400" fill="#9198a1" text-anchor="middle">Next.js</text>
+<rect x="574" y="32" width="30" height="15" rx="7.5" fill="#8fb4d9"/><text x="589" y="43" font-size="9" font-weight="700" fill="#0d1117" text-anchor="middle" letter-spacing="0.5">SSO</text>
+<rect x="624" y="40" width="189" height="46" rx="7" fill="#0d1117" stroke="#3d444d"/>
+<text x="718.5" y="60" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="middle">EPCD Explorer</text>
+<text x="718.5" y="76" font-size="11" font-weight="400" fill="#9198a1" text-anchor="middle">3 vessel APIs</text>
+<rect x="775" y="32" width="30" height="15" rx="7.5" fill="#8fb4d9"/><text x="790" y="43" font-size="9" font-weight="700" fill="#0d1117" text-anchor="middle" letter-spacing="0.5">SSO</text>
+<rect x="825" y="40" width="189" height="46" rx="7" fill="#0d1117" stroke="#3d444d"/>
+<text x="919.5" y="60" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="middle">Data Exploration Tool</text>
+<text x="919.5" y="76" font-size="11" font-weight="400" fill="#9198a1" text-anchor="middle">Django</text>
+<rect x="976" y="32" width="30" height="15" rx="7.5" fill="#8fb4d9"/><text x="991" y="43" font-size="9" font-weight="700" fill="#0d1117" text-anchor="middle" letter-spacing="0.5">SSO</text>
+<rect x="222" y="182" width="160" height="46" rx="7" fill="#0d1117" stroke="#3d444d"/>
+<text x="302.0" y="202" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="middle">Redpanda</text>
+<text x="302.0" y="218" font-size="11" font-weight="400" fill="#9198a1" text-anchor="middle">event streaming</text>
+<rect x="398" y="182" width="204" height="46" rx="7" fill="#0d1117" stroke="#3d444d"/>
+<text x="500.0" y="202" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="middle">FastAPI broker</text>
+<text x="500.0" y="218" font-size="11" font-weight="400" fill="#9198a1" text-anchor="middle">token check · RBAC · ABAC</text>
+<rect x="564" y="174" width="30" height="15" rx="7.5" fill="#8fb4d9"/><text x="579" y="185" font-size="9" font-weight="700" fill="#0d1117" text-anchor="middle" letter-spacing="0.5">SSO</text>
+<rect x="618" y="182" width="198" height="46" rx="7" fill="#0d1117" stroke="#3d444d"/>
+<text x="717.0" y="202" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="middle">Anonymizer</text>
+<text x="717.0" y="218" font-size="11" font-weight="400" fill="#9198a1" text-anchor="middle">AES-256-GCM + ABAC</text>
+<rect x="222" y="344" width="130" height="46" rx="7" fill="#0d1117" stroke="#3d444d"/>
+<text x="287.0" y="372" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="middle">Notebook API</text>
+<rect x="364" y="344" width="130" height="46" rx="7" fill="#0d1117" stroke="#3d444d"/>
+<text x="429.0" y="364" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="middle">Dagster</text>
+<text x="429.0" y="380" font-size="11" font-weight="400" fill="#9198a1" text-anchor="middle">pipelines</text>
+<rect x="222" y="402" width="130" height="46" rx="7" fill="#0d1117" stroke="#3d444d"/>
+<text x="287.0" y="430" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="middle">JupyterHub</text>
+<rect x="364" y="402" width="130" height="46" rx="7" fill="#0d1117" stroke="#3d444d"/>
+<text x="429.0" y="422" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="middle">MLflow</text>
+<text x="429.0" y="438" font-size="11" font-weight="400" fill="#9198a1" text-anchor="middle">tracking · registry</text>
+<rect x="538" y="344" width="150" height="46" rx="7" fill="#0d1117" stroke="#3d444d"/>
+<text x="613.0" y="372" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="middle">Spark + Delta</text>
+<rect x="700" y="344" width="150" height="46" rx="7" fill="#0d1117" stroke="#3d444d"/>
+<text x="775.0" y="364" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="middle">MinIO data lake</text>
+<text x="775.0" y="380" font-size="11" font-weight="400" fill="#9198a1" text-anchor="middle">object storage</text>
+<rect x="862" y="344" width="150" height="46" rx="7" fill="#0d1117" stroke="#3d444d"/>
+<text x="937.0" y="364" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="middle">Trino</text>
+<text x="937.0" y="380" font-size="11" font-weight="400" fill="#9198a1" text-anchor="middle">SQL engine</text>
+<rect x="974" y="336" width="30" height="15" rx="7.5" fill="#8fb4d9"/><text x="989" y="347" font-size="9" font-weight="700" fill="#0d1117" text-anchor="middle" letter-spacing="0.5">SSO</text>
+<rect x="538" y="402" width="150" height="46" rx="7" fill="#0d1117" stroke="#3d444d"/>
+<text x="613.0" y="422" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="middle">OpenMetadata</text>
+<text x="613.0" y="438" font-size="11" font-weight="400" fill="#9198a1" text-anchor="middle">catalogue</text>
+<rect x="650" y="394" width="30" height="15" rx="7.5" fill="#8fb4d9"/><text x="665" y="405" font-size="9" font-weight="700" fill="#0d1117" text-anchor="middle" letter-spacing="0.5">SSO</text>
+<rect x="700" y="402" width="150" height="46" rx="7" fill="#0d1117" stroke="#3d444d"/>
+<text x="775.0" y="430" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="middle">Hive Metastore</text>
+<text x="102" y="372" font-size="11.5" font-weight="400" fill="#9198a1" text-anchor="middle" font-style="italic">One login for every</text>
+<text x="102" y="389" font-size="11.5" font-weight="400" fill="#9198a1" text-anchor="middle" font-style="italic">application and core</text>
+<text x="102" y="406" font-size="11.5" font-weight="400" fill="#9198a1" text-anchor="middle" font-style="italic">service on the platform</text>
+<rect x="208" y="479" width="30" height="15" rx="7.5" fill="#8fb4d9"/><text x="223" y="490" font-size="9" font-weight="700" fill="#0d1117" text-anchor="middle" letter-spacing="0.5">SSO</text>
+<text x="246" y="490" font-size="11.5" font-weight="400" fill="#9198a1" text-anchor="start">signs in through Keycloak</text>
+<path d="M430,486 L466,486" stroke="#6e7681" stroke-width="1.5" marker-end="url(#arch-arrow-dark)"/>
+<text x="474" y="490" font-size="11.5" font-weight="400" fill="#9198a1" text-anchor="start">request</text>
+<path d="M540,486 L576,486" stroke="#6e7681" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#arch-arrow-dark)"/>
+<text x="584" y="490" font-size="11.5" font-weight="400" fill="#9198a1" text-anchor="start">data access routed through the broker</text>
+</svg>

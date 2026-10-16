@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1040" height="430" viewBox="0 0 1040 430" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" role="img" aria-labelledby="t d">
 <title id="t">VesselAI platform at a glance</title>
-<desc id="d">Users reach four module groups through one VesselAI web portal with single sign-on: Digital Twin Studio, AI Services, Data Analytics, and Data Space and Governance, fed by vessel, weather, design and partner data.</desc>
+<desc id="d">Users reach four module groups through one VesselAI web portal with single sign-on: Digital Twin (DT) Models, AI Services, Data Analytics, and Data Space and Governance, fed by vessel, weather, design and partner data.</desc>
 <defs><marker id="arrow-light" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#afb8c1"/></marker></defs>
 <rect x="12" y="4" width="242" height="38" rx="19" fill="#f6f8fa" stroke="#d0d7de"/>
 <text x="133.0" y="28" font-size="13" font-weight="600" fill="#1f2328" text-anchor="middle">Fleet &amp; ship operators</text>
@@ -22,7 +22,7 @@
 <rect x="12" y="148" width="242" height="44" rx="10" fill="#006837"/>
 <rect x="12" y="182" width="242" height="10" fill="#006837"/>
 <rect x="12" y="148" width="242" height="196" rx="10" fill="none" stroke="#d0d7de"/>
-<text x="28" y="176" font-size="15" font-weight="700" fill="#ffffff" text-anchor="start">Digital Twin Studio</text>
+<text x="28" y="176" font-size="15" font-weight="700" fill="#ffffff" text-anchor="start">Digital Twin (DT) Models</text>
 <circle cx="32" cy="217.5" r="3.5" fill="#006837"/>
 <text x="44" y="222" font-size="13" font-weight="400" fill="#1f2328" text-anchor="start">EPCD performance explorer</text>
 <circle cx="32" cy="251.5" r="3.5" fill="#006837"/>
