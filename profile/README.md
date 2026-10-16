@@ -16,7 +16,7 @@ Home of the **VesselAI platform**, a single secure workspace for maritime digita
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-TwinShip-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/twinship/)
 [![YouTube](https://img.shields.io/badge/YouTube-@TwinShipProject-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://www.youtube.com/@TwinShipProject)
 
-**[Platform](#the-vesselai-platform)** · **[Capabilities](#what-you-can-do)** · **[Why VesselAI](#why-vesselai)** · **[Roadmap](#roadmap)** · **[Open source](#open-source-components)** · **[Project](#the-twinship-project)** · **[Contact](#get-involved)**
+**[Platform](#the-vesselai-platform)** · **[Capabilities](#what-you-can-do)** · **[Why VesselAI](#why-vesselai)** · **[Roadmap](#roadmap)** · **[Project](#the-twinship-project)** · **[Contact](#get-involved)**
 
 </div>
 
@@ -186,14 +186,6 @@ These modules are being developed in TwinShip and will be added to the platform:
 > **Platform access:** the VesselAI platform is currently operated for TwinShip partners and pilot users at **[platform.vessel-ai.eu](https://platform.vessel-ai.eu/)**.
 > Interested in a demo, a pilot or a collaboration? Contact us at **[info@twin-ship.eu](mailto:info@twin-ship.eu)**.
 
-## Open-source components
-
-| Repository | What it does | Stack | License |
-| --- | --- | --- | --- |
-| [**twinship-ontology**](https://github.com/twinship-eu/twinship-ontology) | A modular OWL ontology for ships and their onboard systems: engines, propellers, energy storage, fuels, wind-assisted propulsion and more. It has 58 classes and 170 data properties, and builds on ISO 15926-14, QUDT and the VesselAI ontology. **[Browse it online ›](https://ontology.twin-ship.eu/)** | OWL · SHACL · Python | MIT |
-| [**twinship-data-pipeline**](https://github.com/twinship-eu/twinship-data-pipeline) | Harmonises vessel specification data into RDF that conforms to the ontology, validates it with SHACL and publishes the knowledge graph to GraphDB. | Python · Dagster · RDF | CC BY 4.0 |
-| [**twinship-3d-visualizer**](https://github.com/twinship-eu/twinship-3d-visualizer) | An interactive 3D viewer of the TwinShip futuristic RoRo vessel. Each component and parameter links to its formal definition in the ontology. | TypeScript · Next.js · Three.js | MIT |
-
 ## The TwinShip project
 
 TwinShip brings together leading maritime technology providers, shipowners, naval architects, a classification society, a port and research institutes. Together they are building a digital-twin-enabled Decision Support System for green ship operations. The project is working towards cutting greenhouse-gas emissions from shipping by **30–40 % by 2030** and **80–90 % by 2040**, and reaching **net zero by 2045** (all relative to 2008).
@@ -212,7 +204,7 @@ More about the project: **[objectives](https://twin-ship.eu/objectives)** · **[
 
 ## Get involved
 
-- **Explore** the [TwinShip ontology](https://ontology.twin-ship.eu/), or run the open-source components locally using each repository's README.
+- **Explore** [all our repositories](https://github.com/orgs/twinship-eu/repositories). Each repository's README explains what it does and how to get started.
 - **Report a bug or suggest an improvement** by opening an issue in the relevant repository.
 - **Contribute** by following our [contributing guidelines](https://github.com/twinship-eu/.github/blob/main/CONTRIBUTING.md) and [code of conduct](https://github.com/twinship-eu/.github/blob/main/CODE_OF_CONDUCT.md).
 - **Stay up to date** through our [news](https://twin-ship.eu/latest-news), [LinkedIn](https://www.linkedin.com/company/twinship/) and [YouTube](https://www.youtube.com/@TwinShipProject).
